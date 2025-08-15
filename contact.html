@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WithCode -HP①-</title>
+    <meta name="description" content="WithCodeのHP①の課題です。" />
+    <meta name="keywords" content="IT,プログラミング,フリーランス,副業" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OGP -->
+    <meta property="og:url" content="本番環境URL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WithCode -HP①-" />
+    <meta property="og:description" content="WithCodeのHP①の課題です。" />
+    <meta property="og:site_name" content="HP①" />
+    <meta property="og:image" content="本番環境URL/img/logo.png" />
+    <!-- ICON -->
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180×180"
+      href="本番環境URL/img/logo.png"
+    />
+    <!-- CSS-外部 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- CSS-内部 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/common-main.css" />
+    <link rel="stylesheet" type="text/css" href="css/common-sub.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="header-wrap">
+        <div class="header-wrap__logo">
+          <a href="/">
+            <img
+              src="img/葉っぱアイコン素材。.png"
+              alt="葉っぱ型アイコン"
+              class="logo-image"
+            />
+            <p class="logo-txt">コトノハプリント</p>
+          </a>
+        </div>
+
+        <nav class="header-wrap__nav">
+          <ul class="header-wrap__nav__list">
+            <li class="header-wrap__nav__list__item">
+              <a href="news.html">お知らせ</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="about.html">会社概要</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="service.html">事業紹介</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="works.html">制作実績</a>
+            </li>
+          </ul>
+          <div class="header-wrap__btn">
+            <a href="contact.html">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="btn-txt">お問い合わせ</p>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hamburger">
+        <div class="hamburger-area">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </header>
+
+    <>
+      <section class="top" id="top">
+        <div class="top-wrap">
+          <div class="top-wrap__ttl">
+            <h1>お問い合わせ</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="breadcrumb" id="breadcrumb">
+        <div class="breadcrumb-wrap __inner">
+          <nav class="breadcrumb-wrap__nav">
+            <ol class="breadcrumb-wrap__nav__list">
+              <li class="breadcrumb-wrap__nav__list__item">
+                <a href="/">TOP</a>
+              </li>
+              <li class="breadcrumb-wrap__nav__list__item">
+                <a href="#">お問い合わせ</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-wrap">
+          <div class="contact-wrap__ttl">
+            <h2 class="s-ttl">お問い合わせ</h2>
+          </div>
+
+          <div class="contact-wrap__txt">
+            <p>
+              当社コーポレートサイトを御覧いただきましてありがとうございます。<br />内容を確認後、追って担当者よりご連絡いたします。<br />
+              下記よりお問い合わせ項目を記入ください。<br />
+              <span>※</span>は必須項目です。
+            </p>
+          </div>
+
+          <form action="../mail.php" class="contact_form" id="form">
+            <div class="contact-wrap__form__box">
+              <label for="name" class="contact-wrap__form__box__ttl"
+                >お問い合わせ内容<span>※</span></label
+              >
+              <select
+                name="お問い合わせ項目"
+                required="required"
+                class="contact-wrap__form__box__select"
+              >
+                <optgroup value>
+                  <option
+                    value="プルダウンメニューで問い合わせ内容を選択"
+                    hidden
+                    class="contact-wrap__form__box__select__with"
+                  >
+                    選択してください
+                  </option>
+                  <option
+                    value="サイト制作/運用の見積もり"
+                    class="contact-wrap__form__box__select__with"
+                  >
+                    事業内容について
+                  </option>
+                  <option
+                    value="システム制作/運用の見積もり"
+                    class="contact-wrap__form__box__select__with"
+                  >
+                    制作について
+                  </option>
+                  <option
+                    value="その他"
+                    class="contact-wrap__form__box__select__with"
+                  >
+                    その他
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="contact-wrap__form__box">
+              <label for="name" class="contact-wrap__form__box__ttl"
+                >お名前<span>※</span></label
+              >
+              <input
+                type="text"
+                class="contact-wrap__form__box__input"
+                name="お名前"
+                required="required"
+                placeholder="お名前を漢字で入力してください"
+              />
+            </div>
+
+            <div class="contact-wrap__form__box">
+              <label for="name" class="contact-wrap__form__box__ttl"
+                >ふりがな<span>※</span></label
+              >
+              <input
+                type="text"
+                class="contact-wrap__form__box__input"
+                name="ふりがな"
+                required="required"
+                placeholder="お名前をひらがなで入力してください"
+              />
+            </div>
+
+            <div class="contact-wrap__form__box">
+              <label for="email" class="contact-wrap__form__box__ttl"
+                >メールアドレス<span>※</span></label
+              >
+              <input
+                type="email"
+                class="contact-wrap__form__box__input"
+                name="メールアドレス"
+                required="required"
+                placeholder="例）example@example.com"
+              />
+            </div>
+
+            <div class="contact-wrap__form__box _area">
+              <label for="message" class="contact-wrap__form__box__ttl"
+                >お問い合わせ内容<span>※</span></label
+              >
+              <textarea
+                name="お問い合わせ内容"
+                class="contact-wrap__form__box__area"
+                id="message"
+                required="required"
+                placeholder="お問い合わせ内容を入力してください"
+              ></textarea>
+            </div>
+            <div class="contact-btn">
+              <button type="submit">この内容で送信する</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      
+
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer-wrap">
+        <div class="footer-wrap__logo">
+          <a href="/">
+            <img
+              src="img/葉っぱアイコン素材。.png"
+              alt="葉っぱ型アイコン"
+              class="logo-image"
+            />
+            <p class="logo-txt">コトノハプリント</p>
+          </a>
+        </div>
+
+        <div class="footer-wrap__con">
+          <ul class="footer-wrap__con__list">
+            <li class="footer-wrap__con__list__item">
+              <a href="news.html">お知らせ</a>
+            </li>
+            <li class="footer-wrap__con__list__item">
+              <a href="service.html">事業紹介</a>
+              <ul class="footer-wrap__con__list__item__sub">
+                <li class="footer-wrap__con__list__item__sub__item">
+                  <a href="service.html">-サービス一覧</a>
+                </li>
+                <li class="footer-wrap__con__list__item__sub__item">
+                  <a href="service.html">-納品までの流れ</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="footer-wrap__con__list">
+            <li class="footer-wrap__con__list__item">
+              <a href="about.html">会社概要</a>
+              <ul class="footer-wrap__con__list__item__sub">
+                <li class="footer-wrap__con__list__item__sub__item">
+                  <a href="about.html#philosophy">-企業理念</a>
+                </li>
+                <li class="footer-wrap__con__list__item__sub__item">
+                  <a href="about.html#message">-代表挨拶</a>
+                </li>
+                <li class="footer-wrap__con__list__item__sub__item">
+                  <a href="about.html#info">-会社概要</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-wrap__con__list__item">
+              <a href="works.html">制作実績</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-wrap__sns">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="/" class="to-top-btn">TOP</a>
+    </footer>
+
+    <div class="copyright">
+      <p>© 2025 コトノハプリント</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

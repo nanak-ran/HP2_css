@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+.top {
+  background-image: url(../img/about-fv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.philosophy {
+  padding-top: 3.75rem;
+  max-width: 800px;
+  min-height: 785px;
+  margin: 0 auto;
+  /* border: solid 1px red; */
+}
+
+.philosophy-wrap__ttl {
+  text-align: center;
+}
+
+.philosophy-wrap__txt {
+  text-align: center;
+  font-size: clamp(1rem, 0.779rem + 0.74vw, 1.25rem);
+  margin-bottom: 2.5rem;
+}
+
+.philosophy-wrap__con {
+  display: flex;
+  position: relative;
+  border: solid 1px red;
+}
+
+.philosophy-wrap__con__left {
+  width: 48%;
+  padding: 1.56rem 1.87rem;
+  background-color: #E6D8C8;
+  margin-left: 2%;
+}
+
+.philosophy-wrap__con__left p {
+  font-size: clamp(1rem, 0.779rem + 0.74vw, 1.25rem);
+}
+
+.philosophy-wrap__con__right {
+  width: 48%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  
+}
+
+
+
+
+
+
+
+.message {
+  padding: 2.5rem 0;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.message-wrap__ttl {
+  text-align: center;
+}
+
+.f-ttl {
+  text-align: center;
+  font-size: clamp(1rem, 0.449rem + 1.84vw, 1.625rem);
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+  margin: 2.5rem 0;
+}
+
+.message-wrap__txt {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.message-wrap__txt p {
+  margin-bottom: 1.25rem;
+}
+
+.message-wrap__txt__name {
+  text-align: right;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.message-wrap__txt__name {
+  font-size: clamp(1.25rem, 0.809rem + 1.47vw, 1.75rem);
+  font-weight: 700;
+}
+
+.message-wrap__txt__name span {
+  font-size: clamp(1rem, 0.779rem + 0.74vw, 1.25rem);
+  margin-right: 0.62rem;
+  font-weight: 700;
+}
+
+.info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+}
+
+.info-wrap__ttl {
+  text-align: center;
+}
+
+.info-wrap__txt {
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #CBB397;
+  width: 90%;
+  margin: 0 auto;
+  font-size: clamp(1rem, 0.89rem + 0.37vw, 1.125rem);
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.h-ttl {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  margin: 0 0 2.5rem 0;
+  font-size: clamp(1.25rem, 0.368rem + 2.94vw, 2.25rem);
+  color: #666666;
+  max-width: 100%;
+}
+
+.h-ttl::before,
+.h-ttl::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #666666;
+  width: clamp(24px, 12vw, 70px);
+}
+
+.history {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.history__list__item {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.history__list__item p {
+  width: 70%;
+
+}
+
+.history__list__item span {
+  width: 30%;
+}
+
+.info-wrap__overview {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.overview {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.overview__list__item {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.overview__list__item p {
+  width: 70%;
+}
+
+.overview__list__item span {
+  width: 30%;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.access-txt {
+  margin-bottom: 1.25rem;
+}
+
+.access-txt p {
+  font-size: clamp(1rem, 0.89rem + 0.37vw, 1.125rem);
+}
+
+.access-map {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.access-map iframe {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.__tab {
+  display: none;
+}
+
+.__sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .__tab {
+    display: block;
+  }
+
+  .philosophy-wrap__con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.philosophy-wrap__con__left {
+  width: 80%;
+  margin-bottom: 1.25rem;
+  margin-left: 0;
+}
+
+.philosophy-wrap__con__right {
+  position: static;
+  width: 80%;
+}
+
+.message-wrap__image {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.message-wrap__txt {
+  width: 90%;
+}
+
+.h-ttl {
+  margin-left: 2%;
+}
+
+.access-txt {
+  margin-left: 2%;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+  .__sp {
+    display: block;
+  }
+
+  .info-wrap__txt {
+    padding: 0 2%;
+
+  }
+}

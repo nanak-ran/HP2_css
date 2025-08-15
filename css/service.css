@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+.top {
+  background-image: url(../img/service-fv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.products {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 3.75rem;
+  padding-bottom: 2.5rem;
+}
+
+.products-wrap__ttl {
+  text-align: center;
+}
+
+.products-wrap__speech {
+  text-align: center;
+}
+
+.products-wrap__speech h4 {
+  display: inline-block;
+  background-color: #F4B272;
+  padding: 1rem 1.5rem;
+  position: relative;
+  font-size: clamp(1.25rem, 0.699rem + 1.84vw, 1.875rem);
+}
+
+.products-wrap__speech h4::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 1.5rem 1.5rem 0 1.5rem;
+  border-style: solid;
+  border-color: #f4b272 transparent transparent transparent;
+}
+
+.products-wrap__image {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+
+.products-wrap__image img {
+  aspect-ratio: 3 / 4;
+}
+
+.products-wrap__txt {
+  font-size: clamp(1rem, 0.89rem + 0.37vw, 1.125rem);
+  text-align: center;
+  padding: 2.5rem 0;
+  margin: 0 auto;
+}
+
+.product-wrap__con__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.product-wrap__con__list__item {
+  display: flex;  
+  flex-direction: column;           
+}
+
+.product-wrap__con__list__item img {
+  width: 100%;
+  height: auto; 
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.product-wrap__con__list__item h5 {
+  font-size: clamp(1.125rem, 0.794rem + 1.1vw, 1.5rem);
+}
+
+.process {
+  padding-top: 2.5rem;
+  background-color: #B89A7A;
+}
+
+.process-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.process-wrap__ttl {
+  text-align: center;
+}
+
+.process-wrap h2 {
+  color: #fff;
+}
+
+.process-wrap__txt {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  margin: 0 auto;
+}
+
+.process-wrap__con {
+  padding: 2.5rem 0;
+}
+
+.process-wrap__con__block {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.process-wrap__con__block__left {
+  width: 45%;
+}
+
+.process-wrap__con__block__right {
+  width: 45%;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #F4B272;
+  margin: 2.5rem auto;
+}
+
+.left-ttl {
+  font-size: clamp(1.25rem, 0.368rem + 2.94vw, 2.25rem);
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.left-ttl span {
+  font-size: clamp(1.5rem, 0.176rem + 4.41vw, 3rem);
+  margin-right: 0.62rem;
+}
+
+.left-txt {
+  font-size: clamp(1rem, 0.89rem + 0.37vw, 1.125rem);
+  color: #fff;
+}
+
+.__tab {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .__tab {
+    display: block;
+  }
+
+  .products-wrap__txt {
+    width: 90%;
+  }
+
+  .product-wrap__con__list {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .process-wrap__txt {
+  width: 90%;
+}
+
+.process-wrap__con__block {
+  flex-direction: column;
+}
+
+.process-wrap__con__block__left {
+  width: 90%;
+}
+
+.process-wrap__con__block__right {
+  width: 90%;
+  margin-top: 0.62rem;
+}
+}
