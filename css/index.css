@@ -382,7 +382,19 @@
   .__tab {
     display: block;
   }
+
+  .works-wrap__con1,
+.works-wrap__con2 {
+  grid-template-columns: 1fr;
 }
+
+.works-wrap__con1 {
+  margin-bottom: 4%;
+}
+
+}
+
+
 
 
 

@@ -29,7 +29,8 @@
 .philosophy-wrap__con {
   display: flex;
   position: relative;
-  border: solid 1px red;
+  justify-content: space-between;
+  /* border: solid 1px red; */
 }
 
 .philosophy-wrap__con__left {
@@ -43,18 +44,21 @@
   font-size: clamp(1rem, 0.779rem + 0.74vw, 1.25rem);
 }
 
-.philosophy-wrap__con__right {
+/* .philosophy-wrap__con__right {
   width: 48%;
   position: absolute;
   top: 90%;
   left: 50%;
   
+} */
+
+.philosophy-wrap__con__right {
+  width: 48%;
+  position: relative;
+  left: -50px;
+  bottom: -50px;
+  z-index: -1;
 }
-
-
-
-
-
 
 
 .message {
