@@ -65,6 +65,7 @@
   border-bottom: dotted 1px #9f9f9f;
   padding-bottom: 1.25rem;
   color: #909090;
+  line-height: 1.25rem;
 }
 
 .contact-wrap__form__box textarea {

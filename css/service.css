@@ -48,8 +48,14 @@
   margin-top: 2.5rem;
 }
 
-.products-wrap__image img {
+/* .products-wrap__image img {
   aspect-ratio: 3 / 4;
+} */
+
+.products-wrap__image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .products-wrap__txt {

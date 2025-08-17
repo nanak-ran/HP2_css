@@ -61,6 +61,7 @@
   color: #fff;
   font-weight: 700;
   background-color: #f4b272;
+  border: solid 1px #f4b272;
   display: inline-block;
   padding: 0.62rem 1.25rem;
   border-radius: 50px;
@@ -115,7 +116,7 @@
   background-image: url(../img/top-leaf.jpg);
   background-size: cover;
   background-position: center;
-  padding: 2.5rem;
+  padding: 2.5rem 1.25rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -124,7 +125,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
 
 .message-wrap__left {
@@ -154,6 +154,7 @@
 .message-wrap__right {
   width: 48%;
   aspect-ratio: 4 / 3;
+  border: solid 10px #fff;
 }
 
 .message-btn {
@@ -342,6 +343,7 @@
   border-bottom: dotted 1px #9f9f9f;
   padding-bottom: 1.25rem;
   color: #909090;
+  line-height: 1.25rem;
 }
 
 .contact-wrap__form__box textarea {
