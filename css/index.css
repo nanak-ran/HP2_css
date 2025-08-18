@@ -80,10 +80,10 @@
 .about {
   padding: 2.5rem 0;
   margin: 0 auto;
-  /* background-image: url(../img/top-bg.jpg);
+  background-image: url(../img/top-bg.jpg);
   background-size: cover;
-  background-position: center; */
-  background-color: #dcdcdc;
+  background-position: center;
+  /* background-color: #dcdcdc; */
 }
 
 .about-wrap {
