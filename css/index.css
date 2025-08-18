@@ -80,10 +80,10 @@
 .about {
   padding: 2.5rem 0;
   margin: 0 auto;
-  background-image: url(../img/top-bg.jpg);
+  /* background-image: url(../img/top-bg.jpg);
   background-size: cover;
-  background-position: center;
-  /* background-color: #dcdcdc; */
+  background-position: center; */
+  background-color: #dcdcdc;
 }
 
 .about-wrap {
@@ -385,13 +385,32 @@
     display: block;
   }
 
-  .works-wrap__con1,
+  /* .works-wrap__con1,
 .works-wrap__con2 {
-  grid-template-columns: 1fr;
+  grid-template-columns: none;
 }
 
 .works-wrap__con1 {
   margin-bottom: 4%;
+} */
+
+.works-wrap__con1,
+.works-wrap__con2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.works-wrap__con__item {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.works-wrap__con__item img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 }
